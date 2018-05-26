@@ -1,0 +1,25 @@
+<div [@initImageAnimation] = 'initState' class="index">
+    <div class="index-head">
+        <img src="assets/image/20.jpg">
+    </div>
+    <div class="index-text">
+        <div>
+            <label>水电:</label>
+            <span>斯蒂芬斯蒂芬</span>
+        </div>
+        <div>
+            <label>水电:</label>
+            <span>斯蒂芬斯蒂芬</span>
+        </div>
+        <div>
+            <label>水电:</label>
+            <span>斯蒂芬斯蒂芬</span>
+        </div>
+    </div>
+</div>
+
+<ul [@listAnimation]="testArray.length">
+    <li *ngFor="let cc of testArray">
+        <a>{{cc.age}}</a>
+    </li>
+</ul>

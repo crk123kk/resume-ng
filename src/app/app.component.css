@@ -1,0 +1,56 @@
+.crkApp {
+    overflow: hidden;
+    text-align: center;
+    background-color: #3d6b6b;
+    padding: 10px 0;
+}
+
+.crkApp > li {
+    display: inline-block;
+}
+
+.crkApp > li > a{
+    color: #fff;
+}
+
+.appBack {
+    float: right;
+    padding: 0 15px;
+}
+
+.appMain {
+    letter-spacing: 2px;
+}
+
+.appIndex {
+    float: left;
+    padding: 0 15px;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    background: #3d6b6b;
+    color: #fff;
+    text-align: center;
+}
+
+.crkFooter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #3d6b6b;
+    padding: 10px 0;
+}
+
+.crkFooter > li{
+    display: inline-block;
+    width: 40%;
+}
+
+.crkFooter > li > a{
+    color: #fff;
+}

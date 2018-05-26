@@ -1,0 +1,36 @@
+.work > li{
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #666666;
+}
+
+.work > li > .head{
+    color: #333333;
+    font-weight: bold;
+    text-align: left;
+}
+
+.work > li > div{
+    padding: 5px 0;
+    overflow: hidden;
+}
+
+.work > li > div > label{
+    display: block;
+    width: 25%;
+    float: left;
+    margin-bottom: -5000px;
+    padding-bottom: 5000px;
+    color: #999999;
+}
+
+.work > li > div > span{
+    display: block;
+    width: 69%;
+    float: left;
+    margin-bottom: -5000px;
+    padding-bottom: 5000px;
+    color: #666666;
+}
+
+

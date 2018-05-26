@@ -1,0 +1,15 @@
+<h3>test4</h3>
+
+<button (click)="onFired()">fire</button>
+<button (click)="onUnFired()">unFire</button>
+
+<p *ngIf="engineStatus" >engine fired</p>
+
+<button (click)="getInfo()">get info</button>
+<p *ngIf="serviceStatus">service status</p>
+<ul>
+    <li *ngFor="let data of mockDatas">
+        <a>{{data.name}}</a>
+    </li>
+</ul>
+

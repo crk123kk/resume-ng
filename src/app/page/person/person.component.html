@@ -1,0 +1,12 @@
+<ul class="work" [@initImageAnimation] = 'initState'>
+    <li>
+        <div *ngFor="let data of dataList">
+            <label>
+                {{data.key}}
+            </label>
+            <span>
+                {{data.value}}
+            </span>
+        </div>
+    </li>
+</ul>

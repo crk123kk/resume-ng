@@ -1,0 +1,12 @@
+ul > li {
+    padding: 10px;
+    margin: 10px;
+    background: #3d6b6b;
+    text-align: center;
+}
+ul > li > a {
+    display:inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}

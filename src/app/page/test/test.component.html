@@ -1,0 +1,26 @@
+<h3>test</h3>
+
+<!-- <ul [@flyInOut] = "testArray.length">
+    <li *ngFor="let cc of testArray">
+        <a>{{cc.age}}</a>
+    </li>
+</ul>
+
+<button (click)="changeState()">
+    change state
+</button> -->
+
+
+<button (click)="toggle()">Show / Hide Items</button>
+<hr />
+<!-- <div [@listAnimation]="items.length">
+  <div *ngFor="let item of items">
+    {{ item }}
+  </div>
+</div> -->
+
+<ul [@listAnimation]="testArray.length">
+    <li *ngFor="let cc of testArray">
+        <a>{{cc.age}}</a>
+    </li>
+</ul>

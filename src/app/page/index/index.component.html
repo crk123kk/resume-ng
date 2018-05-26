@@ -1,0 +1,21 @@
+<div [@initImageAnimation] = 'initState' class="index">
+    <div class="index-head">
+        <img src="assets/image/20.jpg">
+    </div>
+    <div class="index-text">
+        <div *ngFor="let info of baseInfo">
+            <label>
+                {{info.key}}:
+            </label>
+            <span>
+                {{info.value}}
+            </span>
+        </div>
+    </div>
+</div>
+
+<ul [@listAnimation]="mockData.length">
+    <li *ngFor="let data of mockData">
+        <a [routerLink] = "['../'+data.goal]">{{data.label}}</a>
+    </li>
+</ul>

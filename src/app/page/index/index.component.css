@@ -1,0 +1,46 @@
+.index {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.index-head{
+    float: left;
+    width: 100px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.index-head img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.index-text{
+    float: left;
+    padding: 10px;
+}
+
+.index-text div{
+    padding: 3px;
+}
+
+.index-text label {
+    color: #999;
+}
+
+.index-head span {
+    color: #666;
+}
+
+ul > li {
+    padding: 10px;
+    margin: 10px;
+    background: #3d6b6b;
+    text-align: center;
+}
+ul > li > a {
+    display:inline-block;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+}

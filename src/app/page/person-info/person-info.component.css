@@ -1,0 +1,18 @@
+.head {
+    text-align: center;
+    padding: 20px;
+}
+.text-info{
+    text-indent: 30px;
+    min-height: 200px;
+    padding: 20px;
+    padding-top: 0;
+}
+.button {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    background: #3d6b6b;
+    color: #fff;
+    text-align: center;
+}
