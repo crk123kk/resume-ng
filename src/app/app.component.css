@@ -1,3 +1,12 @@
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.topDiv{
+    height: 45px;
+}
+
 .crkApp {
     overflow: hidden;
     text-align: center;
