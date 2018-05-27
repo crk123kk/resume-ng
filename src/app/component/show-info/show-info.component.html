@@ -1,0 +1,15 @@
+<div [@initImageAnimation] = 'initState'>
+    <ul class="showInfo" *ngFor="let data of dataList">
+        <li class="head" *ngIf="data?.name.length > 0">
+            {{data?.name}}
+        </li>
+        <li *ngFor="let detail of data?.detail">
+            <label>
+                {{detail.key}}
+            </label>
+            <span>
+                {{detail.value}}
+            </span>
+        </li>
+    </ul>
+</div>

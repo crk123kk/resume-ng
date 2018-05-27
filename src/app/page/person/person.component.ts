@@ -17,22 +17,12 @@ export class PersonComponent implements OnInit{
     ){}
 
     ngOnInit() {
-        this.initPage();
         this._asyncLoadInfo2();
     }
 
     _asyncLoadInfo2(){
-        return new Promise((resolve,reject) =>{
-            this._getInfo.loadInfo2().subscribe(res=> {
-                this.dataList = res.personInfo
-            });
-        })
-    }
-
-    initPage(){
-        let self = this;
-        setTimeout(function() {
-            self.initState = 'out';
-        },500)
+        this._getInfo.loadInfo2().subscribe(res=> {
+            this.dataList = res.personInfo
+        });
     }
 }

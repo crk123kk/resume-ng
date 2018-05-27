@@ -1,5 +1,5 @@
 
-<ul class="work" [@initImageAnimation] = 'initState'>
+<!-- <ul class="work" [@initImageAnimation] = 'initState'>
     <li *ngFor="let data of dataList">
         <div class="head">
             {{data.name}}
@@ -61,4 +61,9 @@
             </span>
         </div>
     </li>
-</ul>
+</ul> -->
+
+<show-info
+    [showInfo] = "dataList"
+>
+</show-info>

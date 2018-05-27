@@ -11,6 +11,7 @@ import { GetInfoService } from './share/service/get-info.service';
 import { Http, HttpModule, JsonpModule } from '@angular/http';
 import { GetStateService } from './share/service/get-state.service';
 import { PersonProjectComponent } from './page/person-project/person-project.component';
+import { ShareComponentModule } from './share/module/share-component.module';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { PersonProjectComponent } from './page/person-project/person-project.com
     AppComponent,
     UserIndexComponent,
     PersonComponent,
-    PersonProjectComponent
+    PersonProjectComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,10 +27,13 @@ import { PersonProjectComponent } from './page/person-project/person-project.com
     HttpModule,
     JsonpModule,
     AppRoutingModule,
+    ShareComponentModule,
   ],
   providers: [
     GetInfoService,
     GetStateService
+  ],
+  exports:[
   ],
   bootstrap: [AppComponent]
 })
