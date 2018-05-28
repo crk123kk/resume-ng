@@ -1,23 +1,19 @@
 import { Component, OnInit } from "@angular/core";
 import { GetInfoService } from "../../share/service/get-info.service";
-import { initImageAnimation } from "../../share/animations/initImage-animations";
 
 @Component({
     selector:'person-work',
     templateUrl:'./person-work.component.html',
-    styleUrls:['./person-work.component.css'],
-    animations:[initImageAnimation]
+    styleUrls:['./person-work.component.css']
 })
 
 export class PersonWorkComponent implements OnInit{
-    initState:string = 'in';
     dataList:Array<any>;
     constructor(
         public _getInfo : GetInfoService
     ){}
 
     ngOnInit(){
-        this.initPage();
         this.loadInfo4();
     }
 
@@ -27,10 +23,4 @@ export class PersonWorkComponent implements OnInit{
         });
     }
 
-    initPage(){
-        let self = this;
-        setTimeout(function() {
-            self.initState = 'out';
-        },500)
-    }
 }

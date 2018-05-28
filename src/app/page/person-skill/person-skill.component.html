@@ -1,17 +1,6 @@
 
-<ul class="work" [@initImageAnimation] = 'initState'>
-    <li *ngFor="let data of dataList">
-        <div class="head">
-            {{data.type}}
-        </div>
-        <div *ngFor="let skill of data?.detaliList">
-            <label>
-                {{skill?.detaliSk}}
-            </label>
-            <span>
-                {{skill?.level}}
-            </span>
-        </div>
-    </li>
-</ul>
+<show-info
+    [showInfo] = "dataList"
+>
+</show-info>
     

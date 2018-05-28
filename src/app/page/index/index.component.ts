@@ -26,7 +26,7 @@ export class UserIndexComponent implements OnInit{
             this._getInfo.loadInfo1().subscribe(res=> {
                 this.baseInfo = res.baseInfo;
                 this.mockData1 = res.baseType;
-                resolve('11');
+                resolve();
             });
         }).then(() =>{
             this.initPage();
